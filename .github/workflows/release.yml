@@ -158,7 +158,7 @@ jobs:
       - name: Setup Git
         run: |
           # Configure git for pushing changes
-          git config --global user.email ${{ secrets.EMAIL }} && git config --global user.name PiX
+          git config --global user.email "actions@github.com" && git config --global user.name "PiX"
 
       - name: Install Rust stable
         uses: dtolnay/rust-toolchain@master
